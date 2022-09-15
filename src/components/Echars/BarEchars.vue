@@ -53,5 +53,5 @@ const options = $ref<EChartsOption>({
 </script>
 
 <template>
-  <echarts :options="(options as EChartsOption)" />
+  <echarts id="bar" :options="(options as EChartsOption)" />
 </template>

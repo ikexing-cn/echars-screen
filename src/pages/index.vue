@@ -12,10 +12,17 @@ import dayjs from 'dayjs'
     </p>
 
     <div class="grid-layouts">
-      <div class="card-border">
-        <span text="#23CDFD 7 center" font-bold leading="12.5">每月学习时间</span>
-        <img src="assets/images/heng_line.png" absolute top-20 left-25>
-        <bar-echars />
+      <div>
+        <div class="card-border">
+          <e-title>每月学习时间</e-title>
+          <img src="assets/images/heng_line.png" absolute top-20 left-25>
+          <bar-echars />
+        </div>
+
+        <div text-white mt-3 w-full text-center h-70>
+          <e-title>学习最多课程</e-title>
+          <radar-echars />
+        </div>
       </div>
       <div />
       <div class="card-border" />
@@ -32,7 +39,6 @@ import dayjs from 'dayjs'
 }
 
 .card-border {
-  width: 420px;
   height: 330px;
   display: flex;
   padding-top: 40px;
