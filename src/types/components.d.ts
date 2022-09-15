@@ -7,7 +7,9 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    BarEchars: typeof import('./../components/Echars/BarEchars.vue')['default']
     Counter: typeof import('./src/components/Counter.vue')['default']
+    Echarts: typeof import('./../components/Echarts.vue')['default']
     Footer: typeof import('./../components/Footer.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

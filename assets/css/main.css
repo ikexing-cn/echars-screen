@@ -1,7 +1,21 @@
 html,
 body,
 #app {
-  height: 100%;
   margin: 0;
   padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  min-width: 1920px;
+  min-height: 944px;
+  background-image: url(assets/images/bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-color: rgba(10, 2, 24, 1) !imporent;
+  position:relative;
 }
