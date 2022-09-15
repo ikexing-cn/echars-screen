@@ -1,2 +1,2 @@
 # Echars-Screen
-A full screen echars instance
+A simply full screen echars instance
