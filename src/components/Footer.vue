@@ -3,8 +3,8 @@
 
 <template>
   <div>
-    <button icon-btn mt-20px @click="toggleDark()">
-      <div dark:i-carbon-moon i-carbon-sun />
+    <button>
+      Footer
     </button>
   </div>
 </template>
