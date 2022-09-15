@@ -15,7 +15,7 @@ import dayjs from 'dayjs'
       <div>
         <div class="card-border">
           <e-title>每月学习时间</e-title>
-          <img src="assets/images/heng_line.png" absolute top-20 left-25>
+          <img src="../assets/images/heng_line.png" absolute top-20 left-25>
           <bar-echars />
         </div>
 
@@ -48,6 +48,6 @@ import dayjs from 'dayjs'
   flex-direction: column;
   justify-content: center;
   position: relative;
-  background-image: url('assets/images/chart1_bg.png');
+  background-image: url('~/assets/images/chart1_bg.png');
 }
 </style>

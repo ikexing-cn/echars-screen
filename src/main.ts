@@ -6,7 +6,7 @@ import generatedRoutes from 'virtual:generated-pages'
 import App from './App.vue'
 
 import 'uno.css'
-import '../assets/css/main.css'
+import './assets/css/main.css'
 import '@unocss/reset/tailwind.css'
 
 const app = createApp(App)

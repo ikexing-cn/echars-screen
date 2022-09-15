@@ -12,7 +12,7 @@ body,
   height: 100vh;
   min-width: 1920px;
   min-height: 944px;
-  background-image: url(assets/images/bg.png);
+  background-image: url(~/assets/images/bg.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% 100%;
