@@ -42,12 +42,12 @@ import dayjs from 'dayjs'
 }
 
 .card-border {
-  height: 330px;
+  height: 333px;
   display: flex;
   padding-top: 40px;
   flex-direction: column;
   justify-content: center;
   position: relative;
-  background-image: url('~/assets/images/chart1_bg.png');
+  background: url('~/assets/images/chart1_bg.png') no-repeat;
 }
 </style>

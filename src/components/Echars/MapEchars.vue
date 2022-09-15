@@ -10,9 +10,14 @@ const options = $ref<EChartsOption>({
     emphasis: {
       label: {
         show: true,
-        color: 'white',
+        color: '#ddd',
         fontSize: 14,
       },
+    },
+    label: {
+      show: true,
+      color: 'white',
+      fontSize: 10,
     },
     zoom: 1.6, // 设置初始化的缩放比例
     center: [110, 36], // 设置地图中心点的坐标
