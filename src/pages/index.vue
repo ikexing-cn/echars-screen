@@ -24,18 +24,21 @@ import dayjs from 'dayjs'
           <radar-echars />
         </div>
       </div>
+      <div text-center>
+        <map-echars />
+        <e-title>全国地域分布</e-title>
+      </div>
       <div />
-      <div class="card-border" />
     </div>
   </main>
 </template>
 
 <style lang="less" scoped>
 .grid-layouts {
-  gap: 40px;
+  gap: 100px;
   display: grid;
   padding: 5px 40px;
-  grid-template-columns: 420px 1fr 420px;
+  grid-template-columns: 420px 1fr 200px;
 }
 
 .card-border {

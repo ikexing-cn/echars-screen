@@ -12,6 +12,7 @@ declare module '@vue/runtime-core' {
     Echarts: typeof import('./../components/Echarts.vue')['default']
     ETitle: typeof import('./../components/ETitle.vue')['default']
     Footer: typeof import('./../components/Footer.vue')['default']
+    MapEchars: typeof import('./../components/Echars/MapEchars.vue')['default']
     RadarEchars: typeof import('./../components/Echars/RadarEchars.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
