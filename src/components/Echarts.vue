@@ -1,12 +1,10 @@
 <script lang="ts" setup>
 import * as echarts from 'echarts'
 import type { EChartsOption, EChartsType } from 'echarts'
-import chinaMap from '~/json/china.json'
 
 const { options } = defineProps<{
   options: EChartsOption
 }>()
-echarts.registerMap('chinaMap', chinaMap as any)
 
 let echart = $ref<EChartsType>()
 const echarsContainer = $ref<HTMLDivElement>()
