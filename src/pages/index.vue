@@ -28,10 +28,16 @@ import dayjs from 'dayjs'
         <map-echars />
         <e-title>全国地域分布</e-title>
       </div>
-      <div class="card-border">
-        <e-title>上线课程学习</e-title>
-        <img src="../assets/images/heng_line.png" absolute top-20 left-25>
-        <horizontal-echarts />
+      <div>
+        <div class="card-border">
+          <e-title>上线课程学习</e-title>
+          <img src="../assets/images/heng_line.png" absolute top-20 left-25>
+          <horizontal-echarts />
+        </div>
+        <div text-white mt-3 w-full text-center h-70>
+          <e-title>学习方式</e-title>
+          <pie-echars />
+        </div>
       </div>
     </div>
   </main>
