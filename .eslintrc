@@ -4,5 +4,5 @@
     "comma-dangle": "off",
     "@typescript-eslint/comma-dangle": ["error"],
     "vue/no-extra-parens": "off"
-  }
+  },
 }
