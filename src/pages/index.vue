@@ -18,13 +18,20 @@ import dayjs from 'dayjs'
           <img src="../assets/images/heng_line.png" absolute top-20 left-25>
           <bar-echars />
         </div>
-
         <div text-white mt-3 w-full text-center h-70>
           <e-title>学习最多课程</e-title>
           <radar-echars />
         </div>
       </div>
-      <div text-center>
+      <div text-center relative>
+        <div class="low-card left">
+          <span text-white>今日购买课程</span>
+          <span text="red 4xl" mt-2>114</span>
+        </div>
+        <div class="low-card right">
+          <span text-white>今日新增人数</span>
+          <span text="#33DBFB 4xl" mt-2>514</span>
+        </div>
         <map-echars />
         <e-title>全国地域分布</e-title>
       </div>
@@ -59,5 +66,27 @@ import dayjs from 'dayjs'
   justify-content: center;
   position: relative;
   background: url('~/assets/images/chart1_bg.png') no-repeat;
+}
+
+.low-card {
+  z-index: 100;
+  width: 195px;
+  height: 95px;
+  padding-top: 12px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: url('~/assets/images/card_bg.png') no-repeat;
+
+  &.left {
+    left: 0;
+    bottom: 0;
+  }
+
+  &.right {
+    right: 0;
+    bottom: 0;
+  }
 }
 </style>
