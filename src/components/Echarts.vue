@@ -1,13 +1,12 @@
 <script lang="ts" setup>
-import axios from 'axios'
 import * as echarts from 'echarts'
 import type { EChartsOption, EChartsType } from 'echarts'
+import chinaMap from '~/json/china.json'
 
 const { options } = defineProps<{
   options: EChartsOption
 }>()
-const chinaJson = (await axios.get('https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json')).data
-echarts.registerMap('chinaMap', chinaJson)
+echarts.registerMap('chinaMap', chinaMap as any)
 
 let echart = $ref<EChartsType>()
 const echarsContainer = $ref<HTMLDivElement>()
