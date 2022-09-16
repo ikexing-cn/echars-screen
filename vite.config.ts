@@ -3,10 +3,8 @@
 import path from 'path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
-import Pages from 'vite-plugin-pages'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import Layouts from 'vite-plugin-vue-layouts'
 import Unocss from 'unocss/vite'
 
 export default defineConfig({
@@ -19,10 +17,8 @@ export default defineConfig({
     Vue({
       reactivityTransform: true,
     }),
-    Pages(),
-    Layouts(),
     AutoImport({
-      imports: ['vue', 'vue/macros', 'vue-router', '@vueuse/core', 'pinia'],
+      imports: ['vue', 'vue/macros', '@vueuse/core', 'pinia'],
       dts: 'src/types/auto-imports.d.ts',
       dirs: ['./src/composables'],
       vueTemplate: true,
