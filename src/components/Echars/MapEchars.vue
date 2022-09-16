@@ -6,7 +6,7 @@ const options = $ref<EChartsOption>({
   geo: {
     type: 'map',
     map: 'chinaMap', // chinaMap需要和registerMap中的第一个参数保持一致
-    roam: false, // 设置允许缩放以及拖动的效果
+    roam: true, // 设置允许缩放以及拖动的效果
     emphasis: {
       label: {
         show: true,
@@ -20,7 +20,7 @@ const options = $ref<EChartsOption>({
       fontSize: 10,
     },
     zoom: 1.6, // 设置初始化的缩放比例
-    center: [110, 36], // 设置地图中心点的坐标
+    center: [105, 36], // 设置地图中心点的坐标
     itemStyle: {
       color: 'white',
       areaColor: {
@@ -43,5 +43,5 @@ const options = $ref<EChartsOption>({
 </script>
 
 <template>
-  <echarts ref="mapEcharts" :options="(options as EChartsOption)" />
+  <echarts :options="(options as EChartsOption)" />
 </template>

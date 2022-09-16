@@ -28,7 +28,11 @@ import dayjs from 'dayjs'
         <map-echars />
         <e-title>全国地域分布</e-title>
       </div>
-      <div />
+      <div class="card-border">
+        <e-title>上线课程学习</e-title>
+        <img src="../assets/images/heng_line.png" absolute top-20 left-25>
+        <horizontal-echarts />
+      </div>
     </div>
   </main>
 </template>
@@ -38,7 +42,7 @@ import dayjs from 'dayjs'
   gap: 100px;
   display: grid;
   padding: 5px 40px;
-  grid-template-columns: 420px 1fr 200px;
+  grid-template-columns: 420px 1fr 420px;
 }
 
 .card-border {
